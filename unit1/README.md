@@ -31,5 +31,6 @@ Note: The process of converting an audio signal from the analog domain to digita
 
 1. Nyquist-Shannon sampling theorem: for perfect reconstruction fs>=2fm
 2. Audio (fm = 20 Khz) ---> CD (sampling rate) = 44.1 KHz
-3. The sampled audio signal is reconstructed back into a continuous (analog) form using digital-to-analog conversion (DAC)
-4. DAC involves holding each sample value for its duration (a "zero-order hold") and then smoothing the resulting steps using a low-pass filter.
+3. fs<2fm --> aliasing might occur ---> causes different signals to become indistinguishable (or "aliases" of one another) when sampled.
+4. The sampled audio signal is reconstructed back into a continuous (analog) form using digital-to-analog conversion (DAC)
+5. DAC involves holding each sample value for its duration (a "zero-order hold") and then smoothing the resulting steps using a low-pass filter.
