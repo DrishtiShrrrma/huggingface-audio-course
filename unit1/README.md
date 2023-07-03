@@ -8,8 +8,9 @@
 # Audio Channels
 
 1. Channel:
-2. Mono: has a single channel of audio.
-3. Stereo: contains two separate channels of audio, typically one for the left and one for the right. 
+2. Mono: has a single channel of audio --> apt for speech recognition or music genre classification
+3. Stereo: contains two separate channels of audio, typically one for the left and one for the right ---> tasks that require an understanding of the spatial location of sound sources, like sound source localization or certain types of sound scene analysis
+4. 
 
 # Binaural
 
