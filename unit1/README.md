@@ -27,6 +27,10 @@ Note: The process of converting an audio signal from the analog domain to digita
 2. Upsampling: Increasing the sampling rate of the signal
 3. Downsampling: decreasing the sampling rate of the signal
 
+# Nyquist Rate
+
+1. Nyquist rate: Minimum rate at which a signal should be sampled to avoid aliasing, and it is twice the highest frequency present in the signal. If we sample below this rate --> aliasing. If we sample at or above this rate, we can perfectly reconstruct the original signal from the samples.
+
 # Signal Reconstruction
 
 1. Nyquist-Shannon sampling theorem: for perfect reconstruction fs>=2fm
