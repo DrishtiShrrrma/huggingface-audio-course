@@ -10,7 +10,7 @@
 1. Channel:
 2. Mono: has a single channel of audio --> apt for speech recognition or music genre classification
 3. Stereo: contains two separate channels of audio, typically one for the left and one for the right ---> tasks that require an understanding of the spatial location of sound sources, like sound source localization or certain types of sound scene analysis
-4. 
+4. Multi-channel audio (5.1, 7.1, etc): 5.1 --> 5 speakers + 1 sub-woofer (120 Hz) 
 
 # Binaural
 
@@ -56,3 +56,19 @@ Note: The process of converting an audio signal from the analog domain to digita
 1. Frequency filtering: LPF, HPF, BPF
 2. Fourier Transform: Decomposes a complex signal into its frequency components
 3. Wavelet Transform: Decomposes a signal into both time and frequency components, making it useful for non-stationary signals.
+
+
+# Fourier Transform
+
+
+
+# Inverse Fourier Transform
+
+
+# Librosa
+
+1. Library for music and audio analysis
+2. can handle any type of audio signal, but by default, it converts all signals to mono when loading an audio file because most audio analysis techniques do not require stereo
+3. for stereo specify: mono=False when loading the audio
+4. 
+
