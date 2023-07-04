@@ -1,9 +1,14 @@
 # Audio/Sound
 1. Real-world signal ---> analog or continuous
 2. Can be a single frequency (pure tone)
-3. Audio can be stored in analog + digital format
-4. Analog Storage Medium: Vinyl records or cassette tapes
-5. In most modern systems, audio is converted from analog ---> digital (ADC): for ease of storage, transmission, and manipulation (digital processing)
+3. Sound is made by changes in air pressure at frequencies that are audible to humans.
+4. The amplitude of a sound is the sound pressure level at any given instant and is measured in decibels (dB).
+5. We perceive the amplitude as loudness.
+- a normal speaking voice is under 60 dB,
+- a rock concert can be at around 125 dB, pushing the limits of human hearing.
+8. Audio can be stored in analog + digital format
+9. Analog Storage Medium: Vinyl records or cassette tapes
+10. In most modern systems, audio is converted from analog ---> digital (ADC): for ease of storage, transmission, and manipulation (digital processing)
 
 # Audio Channels
 
