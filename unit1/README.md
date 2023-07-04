@@ -38,8 +38,8 @@ Note: The process of converting an audio signal from the analog domain to digita
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/fc73bde3-7611-4594-96aa-e92bf5fa73ac)
 
 3. Sampling Rate: number of samples of audio taken per second during the process of analog-to-digital conversion.
-- High-resolution Audio: 192 kHz
-- Common sampling rate used in training speech models is 16 kHz.
+  - High-resolution Audio: 192 kHz
+  - Common sampling rate used in training speech models is 16 kHz.
 4. Upsampling: Increasing the sampling rate of the signal
 5. Downsampling: decreasing the sampling rate of the signal
 
