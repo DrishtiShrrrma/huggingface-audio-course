@@ -80,7 +80,7 @@ Note: The process of converting an audio signal from the analog domain to digita
 **Lossy Format:**
 
 1. MP3 (Moving Picture Experts Group (MPEG)): takes advantage of the human auditory system's limitations by removing audio data that is less perceptible to the average listener (generally too high or low freq + auditory masking: when louder sound masks or hides quieter sounds that occur simultaneously or in close proximity) allows for a significant reduction in file size while attempting to maintain the perceived audio quality.
-2. AAC (Advanced Audio Coding): 
+2. AAC (Advanced Audio Coding): provides better sound quality than MP3 at the same bit rate. It's used by platforms like iTunes, YouTube, and many gaming systems.
 
 # Librosa
 
