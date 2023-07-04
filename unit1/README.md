@@ -65,10 +65,27 @@ Note: The process of converting an audio signal from the analog domain to digita
 # Inverse Fourier Transform
 
 
+# Audio Formats
+
+**Uncompressed Format:**
+
+1. WAV (Waveform Audio File Format): Uncompressed format (purely raw) ---> Developed by Microsoft and IBM ---> offers high-quality sound but take a lot of storage space
+
+**Loss-less (Compression) Format:**
+
+1. FLAC (Free Lossless Audio Codec): It can reduce file size without losing any quality, but it uses more storage space than lossy formats. 
+2. ALAC (Apple Lossless Audio Codec): Apple's version of a lossless codec, providing similar quality to FLAC but in a format compatible with Apple devices.
+
+**Lossy Format:**
+
+1. MP3 (Moving Picture Experts Group (MPEG)): takes advantage of the human auditory system's limitations by removing audio data that is less perceptible to the average listener --->  allows for significant reduction in file size while attempting to maintain the perceived audio quality.
+2. AAC (Advanced Audio Coding): 
+
 # Librosa
 
 1. Library for music and audio analysis
 2. can handle any type of audio signal, but by default, it converts all signals to mono when loading an audio file because most audio analysis techniques do not require stereo
 3. for stereo specify: mono=False when loading the audio
 4. 
+
 
