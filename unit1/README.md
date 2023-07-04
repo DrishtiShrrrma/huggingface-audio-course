@@ -104,4 +104,8 @@ Note: The process of converting an audio signal from the analog domain to digita
 3. for stereo specify: mono=False when loading the audio
 4. 
 
+# Bit-depth
 
+1. The bit depth of the sample determines with how much precision amplitude value can be described.
+2. The higher the bit depth, the more faithfully the digital representation approximates the original continuous sound wave.
+3. 
