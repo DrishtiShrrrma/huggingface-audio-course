@@ -44,6 +44,7 @@ Note: The process of converting an audio signal from the analog domain to digita
   - Common sampling rate used in training speech models is 16 kHz.
   - The audible frequencies in human speech are below 8 kHz, hence sampling speech at 16 kHz is sufficient. Using a higher sampling rate will not capture more information and merely leads to an increase in the computational cost of processing such files.
   - sampling audio at too low a sampling rate will result in information loss. Speech sampled at 8 kHz will sound muffled, as the higher frequencies cannot be captured at this rate.
+  - custom audio data to fine-tune a pre-trained model, the sampling rate of your data should match the sampling rate of the data the model was pre-trained on
 4. Upsampling: Increasing the sampling rate of the signal
 5. Downsampling: decreasing the sampling rate of the signal
 
