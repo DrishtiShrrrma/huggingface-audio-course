@@ -34,9 +34,10 @@ Note: The process of converting an audio signal from the analog domain to digita
 
 # Sampling, Upsampling, Downsampling
 
-1. Sampling:
-2. Upsampling: Increasing the sampling rate of the signal
-3. Downsampling: decreasing the sampling rate of the signal
+1. Sampling: analog-to-digital conversion of audio signals. It involves measuring the amplitude of the analog waveform at regular time intervals and converting those measurements into digital data ---> output: digital discrete signal
+2. Sampling Rate: number of samples of audio taken per second during the process of analog-to-digital conversion.
+3. Upsampling: Increasing the sampling rate of the signal
+4. Downsampling: decreasing the sampling rate of the signal
 
 # Nyquist Rate
 
