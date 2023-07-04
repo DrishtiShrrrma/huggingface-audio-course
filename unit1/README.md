@@ -35,14 +35,16 @@ Note: The process of converting an audio signal from the analog domain to digita
 # Sampling, Upsampling, Downsampling
 
 1. Sampling: analog-to-digital conversion of audio signals. It involves measuring the amplitude of the analog waveform at regular time intervals and converting those measurements into digital data ---> output: digital discrete signal
-2. Sampling Rate: number of samples of audio taken per second during the process of analog-to-digital conversion.
-3. Upsampling: Increasing the sampling rate of the signal
-4. Downsampling: decreasing the sampling rate of the signal
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/fc73bde3-7611-4594-96aa-e92bf5fa73ac)
+
+3. Sampling Rate: number of samples of audio taken per second during the process of analog-to-digital conversion.
+4. Upsampling: Increasing the sampling rate of the signal
+5. Downsampling: decreasing the sampling rate of the signal
 
 # Nyquist Rate
 
 1. Nyquist rate: Minimum rate at which a signal should be sampled to avoid aliasing, and it is twice the highest frequency present in the signal. If we sample below this rate --> aliasing. If we sample at or above this rate, we can perfectly reconstruct the original signal from the samples.
-2. Aliasing: imagine a high-frequency waveform and its lower frequency version. If we sampled a signal  at a lower rate, we might mistake the high-frequency waveform for its lower-frequency alias.
+2. Aliasing: imagine a high-frequency waveform and its lower-frequency version. If we sampled a signal  at a lower rate, we might mistake the high-frequency waveform for its lower-frequency alias.
 
 # Signal Reconstruction
 
@@ -52,7 +54,7 @@ Note: The process of converting an audio signal from the analog domain to digita
 4. The sampled audio signal is reconstructed back into a continuous (analog) form using digital-to-analog conversion (DAC)
 5. DAC involves holding each sample value for its duration (a "zero-order hold") and then smoothing the resulting steps using a low-pass filter.
 
-# Methods to Separate components of the Audio
+# Methods to Separate Components of the Audio
 
 1. Frequency filtering: LPF, HPF, BPF
 2. Fourier Transform: Decomposes a complex signal into its frequency components
