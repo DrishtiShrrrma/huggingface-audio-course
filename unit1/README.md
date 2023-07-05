@@ -107,5 +107,8 @@ Note: The process of converting an audio signal from the analog domain to digita
 # Bit-depth
 
 1. The bit depth of the sample determines with how much precision amplitude value can be described.
-2. The higher the bit depth, the more faithfully the digital representation approximates the original continuous sound wave.
-3. 
+2. Higher bit-depth --> more info --> more resolution --> more faithfully the digital representation approximates the original continuous sound wave --> requires more data storage and processing power --> used for professional music production, film scoring, or high-definition video games
+3. Lower bit-depth is preferred where storage is a constraint --> used for voice recordings, low-bandwidth streaming, or certain kinds of electronic music
+4. Dynamic Range (dB) = Bit Depth * 6.02
+5. Quantization Noise: error between the original analog signal and the digital representation of that signal, introduced when the signal is digitized (quantized). 
+6. The signal-to-quantization-noise ratio (SQNR) can be approximated with the formula: SQNR = 6.02N + 1.76 dB, where N is the bit depth. The higher the bit depth, the higher the SQNR, and the lower the impact of quantization noise.
