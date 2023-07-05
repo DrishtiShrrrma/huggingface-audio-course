@@ -107,8 +107,10 @@ Note: The process of converting an audio signal from the analog domain to digita
 # Bit-depth
 
 1. The bit depth of the sample determines with how much precision amplitude value can be described.
-2. Higher bit-depth --> more info --> more resolution --> more faithfully the digital representation approximates the original continuous sound wave --> requires more data storage and processing power --> used for professional music production, film scoring, or high-definition video games
+2. Higher bit-depth --> more info --> more resolution --> smaller quantization noise --> more faithfully the digital representation approximates the original continuous sound wave --> requires more data storage and processing power --> used for professional music production, film scoring, or high-definition video games
 3. Lower bit-depth is preferred where storage is a constraint --> used for voice recordings, low-bandwidth streaming, or certain kinds of electronic music
-4. Dynamic Range (dB) = Bit Depth * 6.02
-5. Quantization Noise: error between the original analog signal and the digital representation of that signal, introduced when the signal is digitized (quantized). 
-6. The signal-to-quantization-noise ratio (SQNR) can be approximated with the formula: SQNR = 6.02N + 1.76 dB, where N is the bit depth. The higher the bit depth, the higher the SQNR, and the lower the impact of quantization noise.
+4. The most common audio bit depths are 16-bit and 24-bit.
+5. 16 bit-depth is enough --> quantization noise is small enough to be inaudible, and using higher bit depths is generally not necessary.
+6. Dynamic Range (dB) = Bit Depth * 6.02
+7. Quantization Noise: error between the original analog signal and the digital representation of that signal, introduced when the signal is digitized (quantized). ----> [quantizing involves rounding off the continuous value to a discrete value, the sampling process introduces noise]
+8. The signal-to-quantization-noise ratio (SQNR) can be approximated with the formula: SQNR = 6.02N + 1.76 dB, where N is the bit depth. The higher the bit depth, the higher the SQNR, and the lower the impact of quantization noise.
