@@ -7,8 +7,10 @@
 - a normal speaking voice is under 60 dB,
 - a rock concert can be at around 125 dB, pushing the limits of human hearing.
 6. Audio can be stored in analog + digital format
-7. Analog Storage Medium: Vinyl records or cassette tapes
-8. In most modern systems, audio is converted from analog ---> digital (ADC): for ease of storage, transmission, and manipulation (digital processing)
+7. For digital audio signals, 0 dB is the loudest possible amplitude, while all other amplitudes are negative.
+8. Every -6 dB is a halving of the amplitude, and anything below -60 dB is generally inaudible unless we really crank up the volume.  
+9. Analog Storage Medium: Vinyl records or cassette tapes
+10. In most modern systems, audio is converted from analog ---> digital (ADC): for ease of storage, transmission, and manipulation (digital processing)
 
 # Audio Channels
 
