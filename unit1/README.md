@@ -145,6 +145,9 @@ Note: The process of converting an audio signal from the analog domain to digita
 
 1. uses the Mel frequency scale, which is a perceptual scale of pitches. The Mel scale better reflects the human ear's response to different frequencies, with higher resolution at lower frequencies and lower resolution at higher frequencies.
 
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/5fb9cadb-bc84-4535-b218-41331cca2292)
+
+
 # Log-mel spectrogram
 
 1. strength of the mel frequency components is represented in decibels ---> log-mel spectrogram
