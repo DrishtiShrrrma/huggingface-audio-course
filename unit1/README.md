@@ -116,3 +116,31 @@ Note: The process of converting an audio signal from the analog domain to digita
 6. Dynamic Range (dB) = Bit Depth * 6.02
 7. Quantization Noise: error between the original analog signal and the digital representation of that signal, introduced when the signal is digitized (quantized). ----> [quantizing involves rounding off the continuous value to a discrete value, the sampling process introduces noise]
 8. The signal-to-quantization-noise ratio (SQNR) can be approximated with the formula: SQNR = 6.02N + 1.76 dB, where N is the bit depth. The higher the bit depth, the higher the SQNR, and the lower the impact of quantization noise.
+
+# Spectrum
+
+1. Representation of a signal in a frequency domain
+2. amplitude Vs frequency
+3. FT[time-domain signal]
+4. shows the amplitude (or power) of each frequency component present in the signal.
+5. does not provide any information about how these frequencies change over time.
+6. helps in understanding its characteristics, such as bandwidth and the dominant frequencies.
+7. 
+
+# Spectrogram
+
+1. Visual Representation of the spectrum of frequencies as it varies with time -- a time-varying spectrum
+2. FT[windowed excerpt of the signal]
+3. Frequency, time, and amplitude
+4. uses a linear frequency scale, which means all frequencies are equally spaced.
+5. helps in identifying the frequency content of a signal over time, making it useful for speech analysis, music analysis, and even bird song identification.
+
+# Mel-Spectrogram
+
+1. uses the Mel frequency scale, which is a perceptual scale of pitches. The Mel scale better reflects the human ear's response to different frequencies, with higher resolution at lower frequencies and lower resolution at higher frequencies.
+
+# MFCC
+
+1. derived from the Mel-spectrogram by applying a Discrete Cosine Transform (DCT) to the log magnitudes of the Mel-spectrogram - gives a compressed representation of the Mel-spectrogram.
+2. Effectively captures the characteristics of the audio and are less sensitive to background noise
+3. 
