@@ -119,6 +119,8 @@ Note: The process of converting an audio signal from the analog domain to digita
 
 # Spectrum
 
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/69ed77bd-75a6-40f0-a2bd-4118d4fbf255)
+
 1. Representation of a signal in a frequency domain
 2. amplitude Vs frequency
 3. FT[time-domain signal]
@@ -129,6 +131,8 @@ Note: The process of converting an audio signal from the analog domain to digita
 
 # Spectrogram
 
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/4fef5eda-a899-4d95-b1c5-befadb32c1bc)
+
 1. Visual Representation of the spectrum of frequencies as it varies with time -- a time-varying spectrum
 2. FT[windowed excerpt of the signal]
 3. Frequency, time, and amplitude
@@ -137,10 +141,14 @@ Note: The process of converting an audio signal from the analog domain to digita
 
 # Mel-Spectrogram
 
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/d2fa0f32-5966-461f-95cd-54476156dd67)
+
 1. uses the Mel frequency scale, which is a perceptual scale of pitches. The Mel scale better reflects the human ear's response to different frequencies, with higher resolution at lower frequencies and lower resolution at higher frequencies.
 
 # MFCC
 
 1. derived from the Mel-spectrogram by applying a Discrete Cosine Transform (DCT) to the log magnitudes of the Mel-spectrogram - gives a compressed representation of the Mel-spectrogram.
-2. Effectively captures the characteristics of the audio and are less sensitive to background noise
-3. 
+2. The DCT is a method for expressing a sequence of data points in terms of a sum of cosine functions oscillating at different frequencies. The DCT is similar to the Discrete Fourier Transform (DFT), but uses only real numbers and thus provides a more efficient representation for real-valued signals.
+3. DCT helps to decorrelate the Mel-spectrum and yields a compressed representation of the spectral shape, which is the MFCCs.
+4. Effectively captures the characteristics of the audio and is less sensitive to background noise
+5. 
