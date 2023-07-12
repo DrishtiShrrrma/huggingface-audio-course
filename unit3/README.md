@@ -11,7 +11,7 @@
 3. The encoder output is passed to the decoder, which also has self-attention and a feed-forward network, to generate predictions for the task.
 4. This prediction (decoder's output) is then passed through a final linear layer and a softmax function to generate the final output probabilities.
 
-# Component of Transformers Model:
+# Component of a Transformer Model:
 1. Input Embedding:
 2. Positional Encoding: Injects information about the position of the words in the sequence.
 3. Encoder: Processes the input data in parallel using a self-attention mechanism and feed-forward neural network.
