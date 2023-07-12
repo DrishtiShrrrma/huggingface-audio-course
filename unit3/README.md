@@ -4,6 +4,7 @@
 3. An encoder in a Transformer model processes the input data and a decoder uses the output of the encoder to generate predictions.
 4. Transformers use self-attention mechanisms to process all parts of the input data in parallel ---> This allows Transformers to handle long sequences more effectively and makes training faster and more efficient.
 
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/847682e0-4589-45bc-96f2-7bf24a3c4021)
 
 # How Does a Transformer Work?
 1. An input is passed to the model, which is then converted into embeddings.
@@ -12,9 +13,11 @@
 4. This prediction (decoder's output) is then passed through a final linear layer and a softmax function to generate the final output probabilities.
 
 # Components of a Transformer Model:
-1. Input Embedding:
+1. Input Embedding: The input text is first tokenized into subwords or words. Each token is then mapped to a vector via an embedding layer, resulting in a sequence of vectors that constitute the input embeddings.
 2. Positional Encoding: Injects information about the position of the words in the sequence.
 3. Encoder: Processes the input data in parallel using a self-attention mechanism and feed-forward neural network.
-4. Decoder: Uses the output from the encoder, and its self-attention mechanism, to generate predictions.
-5. Output Linear Layer: Final layer of the decoder to generate the output.
-6. Softmax Function: Normalizes the output of the Transformer, turning scores into probabilities.
+4. Multi-head attention: Multi-head attention allows the model to focus on different positions simultaneously, capturing various aspects of information from different positions. While a single head attention could capture some aspects of the information, using multiple heads allows the model to capture more complex relationships.
+5. Add and Norm Block: The Add and Norm (or Residual Connection and Layer Normalization) block helps in stabilizing the hidden states and also allows the model to learn more complex functions. It is used after each sub-layer (self-attention and feed-forward) in both the encoder and the decoder.
+6. Decoder: Uses the output from the encoder, and its self-attention mechanism, to generate predictions.
+7. Output Linear Layer: Final layer of the decoder to generate the output.
+8. Softmax Function: Normalizes the output of the Transformer, turning scores into probabilities.
