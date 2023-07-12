@@ -4,7 +4,12 @@
 3. An encoder in a Transformer model processes the input data and a decoder uses the output of the encoder to generate predictions.
 4. Transformers use self-attention mechanisms to process all parts of the input data in parallel.
 
-5. 
+
+# How Does a Transformer Work?
+1. An input is passed to the model, which is then converted into embeddings.
+2. These embeddings, along with positional encodings (to maintain sequence info), are passed through the encoder which generates a sequence of continuous representations using self-attention and a feed-forward network.
+3. The encoder output is passed to the decoder, which also has self-attention and a feed-forward network, to generate predictions for the task.
+4. This prediction (decoder's output) is then passed through a final linear layer and a softmax function to generate the final output probabilities.
 
 # Component of Transformers Model:
 1. Input Embedding:
