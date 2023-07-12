@@ -4,7 +4,8 @@
 3. An encoder in a Transformer model processes the input data and a decoder uses the output of the encoder to generate predictions.
 4. Transformers use self-attention mechanisms to process all parts of the input data in parallel ---> This allows Transformers to handle long sequences more effectively and makes training faster and more efficient.
 
-![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/847682e0-4589-45bc-96f2-7bf24a3c4021)
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/5635a40e-3992-4fec-9189-17d94d5c7ab5)
+
 
 # How Does a Transformer Work?
 1. An input is passed to the model, which is then converted into embeddings.
