@@ -2,7 +2,8 @@
 1. introduced in the paper "Attention is All You Need" by Vaswani et al. in 2017.
 2. utilizes an attention mechanism that enables them to weigh the relevance of different elements in the input data.
 3. An encoder in a Transformer model processes the input data and a decoder uses the output of the encoder to generate predictions.
-4. Transformers use self-attention mechanisms to process all parts of the input data in parallel ---> This allows Transformers to handle long sequences more effectively and makes training faster and more efficient.
+4. Transformers use self-attention mechanisms to process all parts of the input data in parallel ---> Attention layers tell the model to pay specific attention to certain elements in the input sequence and ignore others when computing the feature representations. ---> This allows Transformers to handle long sequences more effectively and makes training faster and more efficient.
+
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/5635a40e-3992-4fec-9189-17d94d5c7ab5)
 
