@@ -12,6 +12,20 @@
 9. Analog Storage Medium: Vinyl records or cassette tapes
 10. In most modern systems, audio is converted from analog ---> digital (ADC): for ease of storage, transmission, and manipulation (digital processing)
 
+
+# Need to Standardize Audio
+
+1. Computational Stability: Numerical instabilities can lead to problematic gradients during training. Standardizing audio ensures that features are on a similar scale, preventing any one feature from dominating.
+2. Model Convergence: With standardization, models often converge faster. Gradient descent converges more quickly when the features are on a similar scale.
+3. Assumption of Normal Distribution: Standardizing can help to normalize the data if it’s approximately normally distributed, which is an assumption for many statistical tests and machine learning models.
+
+# Standarization Vs Normalization
+
+1. Normalization typically transforms data to the range [0, 1] or [-1, 1]. Standardization transforms data to have a mean of 0 and standard deviation of 1, but doesn't have a specific range.
+2. Standardization is less affected by outliers than normalization, as extreme values can skew the minimum and maximum used in normalization.
+3. Standardization is preferred when the data follows a Gaussian distribution or when the scale of the feature is irrelevant. Normalization is useful when the scale is important or when the data has varying scales.
+
+
 # Audio Channels
 
 1. Channel:
