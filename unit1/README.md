@@ -13,7 +13,7 @@
 10. In most modern systems, audio is converted from analog ---> digital (ADC): for ease of storage, transmission, and manipulation (digital processing)
 
 
-# Need to Standardize Audio
+# What's the Need for Standardizing Audio?
 
 1. Computational Stability: Numerical instabilities can lead to problematic gradients during training. Standardizing audio ensures that features are on a similar scale, preventing any one feature from dominating.
 2. Model Convergence: With standardization, models often converge faster. Gradient descent converges more quickly when the features are on a similar scale.
