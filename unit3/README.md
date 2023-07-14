@@ -23,3 +23,11 @@
 6. Decoder: Uses the output from the encoder, and its self-attention mechanism, to generate predictions.
 7. Output Linear Layer: Final layer of the decoder to generate the output.
 8. Softmax Function: Normalizes the output of the Transformer, turning scores into probabilities.
+
+# Transformer-based Models that take Waveform input
+
+a. Wav2Vec, Wav2Vec-U, Wav2Vec2
+b. HuBERT
+
+1. a waveform is a one-dimensional sequence of floating-point numbers, where each number represents the sampled amplitude at a given time.
+2. This raw waveform is first standardized (zero mean and variance =1) 
