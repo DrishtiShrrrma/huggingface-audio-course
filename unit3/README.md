@@ -30,4 +30,16 @@ a. Wav2Vec, Wav2Vec-U, Wav2Vec2
 b. HuBERT
 
 1. a waveform is a one-dimensional sequence of floating-point numbers, where each number represents the sampled amplitude at a given time.
-2. This raw waveform is first standardized (zero mean and variance =1) 
+2. This raw waveform is first standardized (zero mean and variance =1)
+
+# Wav2Vec
+
+
+
+# Wav2Vec-U
+
+# Wav2Vec 2.0
+
+# HuBERT
+
+
