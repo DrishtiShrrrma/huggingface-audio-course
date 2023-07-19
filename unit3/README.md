@@ -60,14 +60,12 @@ b. HuBERT
 6. It is very lightweight: consists of a single temporal convolution comprising only about 90k parameters to which we input frozen wav2vec 2.0 representations.
 7. Compared to the best previous unsupervised work, wav2vec-U reduces the phoneme error rate on the TIMIT benchmark from 26.1 to 11.3. On the larger English Librispeech benchmark, wav2vec-U achieves a word error rate of 5.9 on test-other, rivaling some of the previous best-published systems trained on 960 hours of labeled data.
 8. Silence Removal from the training data: rVAD, an unsupervised voice activity detection (VAD) model which determines the segments in the audio data corresponding to silences was applied and silent sections were removed.
-9. 
 
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/7f132d8a-5bdb-44eb-b0f6-c9f9ee02d433)
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/51fda51b-18c4-45a1-9cd6-f07fc73062c0)
 
-7.  self-supervised speech representations are leveraged to segment unlabeled audio and learn a mapping from these representations to phonemes via adversarial training. The right representations are key to the success of our method.
 8. Just like Wav2Vec, Wav2Vec-U is composed of a feature encoder and a context network. It also introduces a quantization module, a transformer model, and makes use of an online k-means algorithm for creating an unsupervised target.
 9. It can still be computationally intensive due to the self-supervised learning nature.
 10. Its use of online k-means allows for the creation of an unsupervised target, aiding in learning.
