@@ -83,6 +83,16 @@ modeling.
 
 
 
-# HuBERT
+# HuBERT (Hidden unit BERT)
 
+1. Benefits from an offline clustering step to generate noisy labels for a BERT-like per-training. Concretely, a BERT model consumes masked continuous speech features to predict predetermined cluster assignments.
+2. The predictive loss is only applied over the masked regions, forcing the model to learn good high-level representations of unmasked inputs to infer the targets of masked ones correctly.
+3. HuBERT model is forced to learn both acoustic and language models from continuous inputs.
+4. First, the model needs to model unmasked inputs into meaningful continuous latent representations, which maps to the classical acoustic modeling problem.
+5. Second, to reduce the prediction error, the model needs to capture the long-range temporal relations between learned representations.
+6. HuBERT benefits from the masked prediction loss over speech sequences to represent their sequential structure.
+7. When the HuBERT model is pre-trained on either the standard Librispeech 960h or the Libri-Light 60k hours, it either matches or improves upon the state-of-the art wav2vec 2.0 performance on all fine-tuning subsets of 10mins, 1h, 10h, 100h, and 960h.
+8. The X-LARGE model shows up to 19% and 13% relative WER improvement from LARGE models on dev-other and test-other evaluation subsets when pre-trained on the Libri-Light 60k hours.
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/f420114b-3a3d-4850-8a6b-1252f349860d)
 
