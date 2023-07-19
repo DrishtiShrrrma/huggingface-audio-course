@@ -44,7 +44,7 @@ b. HuBERT
 8. The context network takes as input the encoder output features, encoding 210 ms of raw audio into another 512-dimensional feature vector ct. The objective is to aggregate information over a longer timeframe to model higher-order information. This network outputs contextual representations ct that are used to predict future audio samples.
 9. These convolution networks are causal in nature. Wav2vec should not “peek” into the future when predicting future samples, hence the convolutional layers are structured in a way that each output at time t never attends to positions after t. In practice, this is done through left-padding the input as shown in the diagram below.
 
-![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/ee8f3aff-289f-4753-8b08-89e38cef8684)
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/48d6aa39-cd35-4f4a-bfb9-597f33e47b8f)
 
 # Wav2Vec 2.0
 
