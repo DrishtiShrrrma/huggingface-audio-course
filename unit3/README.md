@@ -34,6 +34,10 @@ b. HuBERT
 
 # Wav2Vec
 
+1. self-supervised pre-training + supervised fine-tuning
+2. Similar to GPT-2 or GPT-3 for text, wav2vec tries to predict the future of an audio sequence
+3. A large network on unlabeled data is pre-trained to learn useful contextual representations of the text/audio sequence.
+4. There are however challenges to model the future of audio sequences compared to text. Audio data has a much higher dimension than text (text has a finite vocabulary), so directly modeling the waveform signal is much harder. Instead, wav2vec first reduces the dimensionality of the speech data by encoding it into a latent space, and then predicting the future in this latent space.
 
 
 # Wav2Vec-U
