@@ -49,7 +49,17 @@ b. HuBERT
 # Wav2Vec 2.0
 
 1. A framework for self-supervised learning of speech representations that masks latent representations of the raw waveform and solves a contrastive task over quantized speech representations.
-2. 
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/29bc1506-5fd0-44ae-87fc-9c3164c564d3)
+
+2. Encodes speech audio via a multi-layer convolutional neural network and then masks spans of the resulting latent speech representations, similar to masked language
+modeling.
+3. The latent representations are fed to a Transformer network to build contextualized representations and the model is trained via a contrastive task where the true latent is to be distinguished from distractors.
+4. As part of training, it learns discrete speech units via a gumbel softmax to represent the latent representations in the contrastive task which we find to be more effective than non-quantized targets.
+5. After pre-training on unlabeled speech, the model is fine-tuned on labeled data with a Connectionist Temporal Classification (CTC) loss to be used for downstream speech recognition tasks.
+6. Jointly learning discrete speech units with contextualized representations achieves substantially better results
+7. Using only 10 minutes of labeled data, Wav2Vec2 achieves word error rate (WER) 4.8/8.2 on the clean/other test sets of Librispeech
+
 
 # Wav2Vec-U
 
