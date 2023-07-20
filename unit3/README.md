@@ -32,7 +32,7 @@ b. HuBERT
 1. a waveform is a one-dimensional sequence of floating-point numbers, where each number represents the sampled amplitude at a given time.
 2. This raw waveform is first standardized (zero mean and variance =1)
 
-# Wav2Vec
+### Wav2Vec
 
 1. self-supervised pre-training + supervised fine-tuning
 2. Similar to GPT-2 or GPT-3 for text, wav2vec tries to predict the future of an audio sequence
@@ -46,7 +46,7 @@ b. HuBERT
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/48d6aa39-cd35-4f4a-bfb9-597f33e47b8f)
 
-# Wav2Vec 2.0
+### Wav2Vec 2.0
 
 1. A framework for self-supervised learning of speech representations that masks latent representations of the raw waveform and solves a contrastive task over quantized speech representations.
 
@@ -61,7 +61,7 @@ modeling.
 7. Using only 10 minutes of labeled data, Wav2Vec2 achieves word error rate (WER) 4.8/8.2 on the clean/other test sets of Librispeech
 
 
-# Wav2Vec-U
+### Wav2Vec-U
 
 1. A method to train speech recognition models without any labeled data -- useful for ultra-low resource languages -- labelled data is sparse.
 2. Wav2vec-U leverages self-supervised representations from wav2vec 2.0 to embed the speech audio and to segment the audio into units with a simple k-means clustering method. [It embeds and segments the speech audio with self-supervised representations from wav2vec 2.0, learns a mapping to phonemes with adversarial learning, and cross-validates hyper-parameter choices as well as early stopping with an unsupervised metric]
@@ -83,7 +83,7 @@ modeling.
 
 
 
-# HuBERT (Hidden unit BERT)
+### HuBERT (Hidden unit BERT)
 
 1. Benefits from an offline clustering step to generate noisy labels for a BERT-like per-training. Concretely, a BERT model consumes masked continuous speech features to predict predetermined cluster assignments.
 2. The predictive loss is only applied over the masked regions, forcing the model to learn good high-level representations of unmasked inputs to infer the targets of masked ones correctly.
