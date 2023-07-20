@@ -117,11 +117,6 @@ modeling.
 
 
 
-![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/de88a58e-ca0c-4ba0-af99-c3415a8010e9)
-
-
-![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/84b54d43-c187-4539-919b-e3c68fe3d227)
-
 
 
 
