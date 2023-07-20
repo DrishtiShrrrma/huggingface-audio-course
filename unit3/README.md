@@ -103,6 +103,25 @@ modeling.
 #### Note:
 1. Downside of using the raw waveform as input is that they tend to have long sequence lengths. For example, thirty seconds of audio at a sampling rate of 16 kHz gives an input of length 30 * 16000 = 480000. Longer sequence lengths require more computations in the transformer model, and so higher memory usage.
 2. Raw audio waveforms are not usually the most efficient form of representing an audio input. By using a spectrogram, we get the same amount of information but in a more compressed form.
+3. Models such as Whisper first convert the waveform into a log-mel spectrogram. Whisper always splits the audio into 30-second segments, and the log-mel spectrogram for each segment has shape (80, 3000) where 80 is the number of mel bins and 3000 is the sequence length. By converting to a log-mel spectrogram we’ve reduced the amount of input data, but more importantly, this is a much shorter sequence than the raw waveform. The log-mel spectrogram is then processed by a small CNN into a sequence of embeddings, which goes into the transformer as usual.
+
+### Whisper
+
+1. trained on 680,000 hours of multilingual and multitask supervised data collected from the web - lead to improved robustness to accents, background noise and technical language -enables transcription in multiple languages, as well as translation from those languages into English.
+2. implemented as an encoder-decoder Transformer.
+3. Input audio is split into 30-second chunks, converted into a log-Mel spectrogram, and then passed into an encoder.
+4. A decoder is trained to predict the corresponding text caption, intermixed with special tokens that direct the single model to perform tasks such as language identification, phrase-level timestamps, multilingual speech transcription, and to-English speech translation.
+5. Other existing approaches frequently use smaller, more closely paired audio-text training datasets, or use broad but unsupervised audio pretraining. Because Whisper was trained on a large and diverse dataset and was not fine-tuned to any specific one, it does not beat models that specialize in LibriSpeech performance. However, when we measure Whisper’s zero-shot performance across many diverse datasets we find it is much more robust and makes 50% fewer errors than those models.
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/fe3b4870-e50d-49cc-ac6e-f1c354d5fc33)
+
+
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/de88a58e-ca0c-4ba0-af99-c3415a8010e9)
+
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/84b54d43-c187-4539-919b-e3c68fe3d227)
+
 
 
 
