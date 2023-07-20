@@ -25,7 +25,7 @@
 8. Softmax Function: Normalizes the output of the Transformer, turning scores into probabilities.
 
 # Model Inputs
-## Transformer-based Models that take Waveform input
+## 1. Transformer-based Models that take Waveform input
 
 a. Wav2Vec, Wav2Vec-U, Wav2Vec2
 b. HuBERT
@@ -96,4 +96,13 @@ modeling.
 8. The X-LARGE model shows up to 19% and 13% relative WER improvement from LARGE models on dev-other and test-other evaluation subsets when pre-trained on the Libri-Light 60k hours.
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/f420114b-3a3d-4850-8a6b-1252f349860d)
+
+
+## 2. Transformer-based Models that take Spectrogram input
+
+#### Note:
+1. Downside of using the raw waveform as input is that they tend to have long sequence lengths. For example, thirty seconds of audio at a sampling rate of 16 kHz gives an input of length 30 * 16000 = 480000. Longer sequence lengths require more computations in the transformer model, and so higher memory usage.
+2. Raw audio waveforms are not usually the most efficient form of representing an audio input. By using a spectrogram, we get the same amount of information but in a more compressed form.
+
+
 
