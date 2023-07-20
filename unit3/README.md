@@ -109,9 +109,14 @@ modeling.
 
 1. trained on 680,000 hours of multilingual and multitask supervised data collected from the web - lead to improved robustness to accents, background noise and technical language -enables transcription in multiple languages, as well as translation from those languages into English.
 2. implemented as an encoder-decoder Transformer.
-3. Input audio is split into 30-second chunks, converted into a log-Mel spectrogram, and then passed into an encoder.
-4. A decoder is trained to predict the corresponding text caption, intermixed with special tokens that direct the single model to perform tasks such as language identification, phrase-level timestamps, multilingual speech transcription, and to-English speech translation.
-5. Other existing approaches frequently use smaller, more closely paired audio-text training datasets, or use broad but unsupervised audio pretraining. Because Whisper was trained on a large and diverse dataset and was not fine-tuned to any specific one, it does not beat models that specialize in LibriSpeech performance. However, when we measure Whisper’s zero-shot performance across many diverse datasets we find it is much more robust and makes 50% fewer errors than those models.
+3. All audio is re-sampled to 16,000 Hz, and an 80-channel log-mel spectrogram representation is computed on 25-millisecond windows with a stride of 10 milliseconds.
+4. For feature normalization, input is globally scaled to be between -1 and 1 with approximately zero mean across the pre-training dataset.
+5. The encoder processes this input representation (log-mel spectrogram) with a small stem consisting of two convolution layers with a filter width of 3 and the GELU activation function.
+6. Sinusoidal position embeddings are then added to the output of the stem after which the encoder Transformer blocks are applied.
+7. The transformer uses pre-activation residual blocks, and a final layer normalization is applied to the encoder output. The decoder uses learned position embeddings and tied input-output token representations
+8. The encoder and decoder have the same width and number of transformer blocks.
+9. Byte-level BPE tokenizer is used (Same as GPT-2)
+10. A fully featured speech recognition system can involve many additional components such as voice activity detection, speaker diarization, and inverse text normalization. These components are often handled separately, resulting in a relatively complex system around the core speech recognition model. To reduce this complexity, we would like to have a single model perform the entire speech processing pipeline, not just the core recognition part. An important consideration here is the interface for the model. There are many different tasks that can be performed on the same input audio signal: transcription, translation, voice activity detection, alignment, and language identification are some examples.
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/fe3b4870-e50d-49cc-ac6e-f1c354d5fc33)
 
