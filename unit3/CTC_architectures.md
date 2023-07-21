@@ -4,7 +4,8 @@
 2. Primarily designed for tasks like speech recognition, handwriting recognition, etc.
 3. While CTC is commonly used with encoder-only transformer models in automatic speech recognition (ASR), it is not exclusive to this setup.
 4. An encoder-only ASR model works by transforming an input audio waveform into a sequence of feature vectors, then applying a transformation (the encoder) to map these feature vectors into a sequence of hidden states. The decoder, in a traditional sense, is not needed because CTC can directly map from the hidden states to the output sequence of labels. The CTC "decoding" process involves finding the most likely label sequence given the model's output probabilities.
-5. Use: Solving sequence-to-sequence problems where the alignment between the input and output sequences is unknown, ASR, etc!
+5. **We know that the order the speech is spoken in is the same as the order that the text is transcribed in (the alignment is so-called monotonic), but we don’t know how the characters in the transcription line up to the audio. This is where the CTC algorithm comes in.**
+6. Use: Solving sequence-to-sequence problems where the alignment between the input and output sequences is unknown, ASR, etc!
 
 # Advantages of CTC:
 
