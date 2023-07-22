@@ -12,15 +12,17 @@
 
 1. No need for alignment between input and output sequences
 2. Efficient in handling sequences of varying lengths
-3. Can handle many sequence-to-sequence tasks quite effectively
+3. When the input sequences and output sequences are of comparable length.
+4. In tasks with a relatively small number of output classes, such as character-level automatic speech recognition.
+5. Can handle many sequence-to-sequence tasks quite effectively
 
 # Disadvantages of CTC:
 
 1. Makes the assumption that the inputs are independent given the outputs, which might not hold true for all types of data
-2. Doesn't work well for problems where there are strong dependencies between output labels
-3. When there are strong dependencies between output labels. The conditional independence assumption of CTC is often violated in such cases.
-In cases where the input sequence and output sequence have significantly different lengths. It can struggle with particularly long sequences due to its need to assign an output (or blank label) to every input timestep.
-If the number of output classes is large, CTC may not perform well. It is more suited to tasks with a smaller number of output classes.
+2. Doesn't work well for problems where there are strong dependencies between output labels - conditional independence assumption of CTC is often violated in such cases.
+3. In cases where the input sequence and output sequence have significantly different lengths.
+4. It can struggle with particularly long sequences due to its need to assign an output (or blank label) to every input timestep.
+5. If the number of output classes is large, CTC may not perform well. It is more suited to tasks with a smaller number of output classes.
 
 # CTC Head
 
