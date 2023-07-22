@@ -5,8 +5,9 @@
 3. While CTC is commonly used with encoder-only transformer models in automatic speech recognition (ASR), it is not exclusive to this setup.
 4. An encoder-only ASR model works by transforming an input audio waveform into a sequence of feature vectors, then applying a transformation (the encoder) to map these feature vectors into a sequence of hidden states. The decoder, in a traditional sense, is not needed because CTC can directly map from the hidden states to the output sequence of labels. The CTC "decoding" process involves finding the most likely label sequence given the model's output probabilities.
 5. **We know that the order the speech is spoken in is the same as the order that the text is transcribed in (the alignment is so-called monotonic), but we don’t know how the characters in the transcription line up to the audio. This is where the CTC algorithm comes in.**
-6. An ASR model is trained on a dataset consisting of (audio, text) pairs where the text is a human-made transcription of the audio file. Generally the dataset does not include any timing information that says which word or syllable occurs where in the audio file. Since we can’t rely on timing information during training, we don’t have any idea how the input and output sequences should be aligned.
-7. Use: Solving sequence-to-sequence problems where the alignment between the input and output sequences is unknown, ASR, etc!
+**6. During decoding, repeated characters (not separated by a blank symbol) are collapsed into a single character.**
+7. An ASR model is trained on a dataset consisting of (audio, text) pairs where the text is a human-made transcription of the audio file. Generally the dataset does not include any timing information that says which word or syllable occurs where in the audio file. Since we can’t rely on timing information during training, we don’t have any idea how the input and output sequences should be aligned.
+8. Use: Solving sequence-to-sequence problems where the alignment between the input and output sequences is unknown, ASR, etc!
 
 # Advantages of CTC:
 
