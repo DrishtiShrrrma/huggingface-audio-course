@@ -46,3 +46,9 @@
 
 1. In ASR, the speech is converted to a text output.
 2. The way this text is predicted depends on the approach used. It can be as individual characters (each label in the output sequence is a character), as phonemes (each label is a phoneme, the smallest unit of sound), or as word tokens (each label is a whole word). The choice depends on the specific task and the data available.
+
+
+
+# Wav2Vec
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/ff676ed4-de97-462c-bd00-d36ae0308274)
