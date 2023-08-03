@@ -126,7 +126,9 @@ modeling.
 
 Transformer architecture outputs a sequence of hidden state vectors (output embeddings), which need to be converted to text or audio output!
 
+### Text Output
 
+1. Add LM head (usually a single linear layer) followed by a softmax on top of the transformer’s output ---> predicts probabilities over the text tokens in the vocabulary.
 ### Spectrogram Output
 
 1. Generate spectrogram and use vocoder to convert spectrogram ---> audio
