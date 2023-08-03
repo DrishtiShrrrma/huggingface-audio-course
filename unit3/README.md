@@ -127,4 +127,8 @@ modeling.
 Transformer architecture outputs a sequence of hidden state vectors (output embeddings), which need to be converted to text or audio output!
 
 
+### Spectrogram Output
 
+1. Generate spectrogram and use vocoder to convert spectrogram ---> audio
+2. SpeechT5 TTS: output is a sequence of 768-element vectors. A linear layer projects that sequence into a log-mel spectrogram. Then a post-net made up of additional linear and convolutional layers refines the spectrogram by reducing noise. The vocoder then makes the final audio waveform.
+3. 
