@@ -122,7 +122,9 @@ modeling.
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/fe3b4870-e50d-49cc-ac6e-f1c354d5fc33)
 
 
+# Model Outputs
 
+Transformer architecture outputs a sequence of hidden state vectors (output embeddings), which need to be converted to text or audio output!
 
 
 
