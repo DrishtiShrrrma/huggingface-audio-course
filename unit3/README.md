@@ -133,6 +133,7 @@ Transformer architecture outputs a sequence of hidden state vectors (output embe
 
 1. Generate spectrogram and use vocoder to convert spectrogram ---> audio
 2. SpeechT5 TTS: output is a sequence of 768-element vectors. A linear layer projects that sequence into a log-mel spectrogram. Then a post-net made up of additional linear and convolutional layers refines the spectrogram by reducing noise. The vocoder then makes the final audio waveform.
+3. Alternatively, waveform --> STFT --> ISTFT --> waveform (This works because the spectrogram created by the STFT contains both amplitude and phase information, and both are needed to reconstruct the waveform. However, audio models that generate their output as a spectrogram typically only predict the amplitude information, not the phase. )
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/8f481d61-6da8-4c59-a36c-136db117f862)
 
