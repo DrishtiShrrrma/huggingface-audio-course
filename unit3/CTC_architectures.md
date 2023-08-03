@@ -2,7 +2,7 @@
 
 1. Connectionist Temporal Classification (CTC) is a type of loss function used in neural networks, particularly for sequence-to-sequence problems where the alignment between the input and output sequences is unknown.
 2. Primarily designed for tasks like speech recognition, handwriting recognition, etc.
-3. While CTC is commonly used with encoder-only transformer models in automatic speech recognition (ASR), it is not exclusive to this setup.
+3. **While CTC is commonly used with encoder-only transformer models in automatic speech recognition (ASR), it is not exclusive to this setup.**
 4. An encoder-only ASR model works by transforming an input audio waveform into a sequence of feature vectors, then applying a transformation (the encoder) to map these feature vectors into a sequence of hidden states. The decoder, in a traditional sense, is not needed because CTC can directly map from the hidden states to the output sequence of labels. The CTC "decoding" process involves finding the most likely label sequence given the model's output probabilities.
 5. The blank token in CTC is a special symbol that the model can output when it is uncertain, or when there is no character to output. It helps the model handle variable-length input-output mappings, and also assists in handling character duplication. The blank symbol is typically used in the decoding process to remove duplicates and to align the predicted sequence with the target sequence.
 6. **We know that the order the speech is spoken in is the same as the order that the text is transcribed in (the alignment is so-called monotonic), but we don’t know how the characters in the transcription line up to the audio. This is where the CTC algorithm comes in.**
