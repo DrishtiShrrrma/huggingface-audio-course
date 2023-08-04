@@ -10,7 +10,7 @@
 3. spectrogram - 2d tensor (freqs, seq len)
 
 
-### Audio Spectrogram Transformer
+### 1. Audio Spectrogram Transformer
 
 1. uses the ViT or Vision Transformer model and takes spectrograms as input instead of regular images for audio classification tasks.
 2. The transformer's self-attention layers in AST help the model capture global context more effectively than traditional CNNs.
@@ -22,4 +22,11 @@
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/ff6162b0-47ca-46e0-ad92-f991a2c4c44b)
 
 
+# Misceleneous
 
+1. CTC models predict probabilities for class labels from a tokenizer vocabulary, making them classifiers inherently.
+2. CTC models can be transformed into general-purpose audio classifiers by modifying the labels and employing regular cross-entropy loss instead of CTC loss.
+3. Wav2Vec2ForSequenceClassification - for a single classification score for the entire sequence
+4. Wav2Vec2ForAudioFrameClassification - for separate classifications for each audio frame
+5. which vary in the size of the classification layer and loss function used.
+6. Any encoder-only audio transformer model can be converted into an audio classifier by adding a classification layer on top of the sequence of hidden states, as classifiers typically don't require a transformer decoder.
