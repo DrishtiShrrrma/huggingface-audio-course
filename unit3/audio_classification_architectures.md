@@ -1,7 +1,7 @@
 # Spectrograms Vs Normal Images
 
 1. Shifting the contents of an image vertically up or down generally doesn't alter its meaning, but in the case of a spectrogram, vertical shifts change the frequencies and, subsequently, the audio's character.
-2. Images are translation-invariant, meaning shifting their contents doesn't affect their interpretation, while spectrograms are not invariant to shifts.
+2. Images - translation-invariant, spectrograms are not invariant to shifts.
 
 # Audio Classification Architectures
 
