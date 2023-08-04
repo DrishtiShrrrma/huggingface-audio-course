@@ -22,7 +22,7 @@
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/ff6162b0-47ca-46e0-ad92-f991a2c4c44b)
 
 
-# Misceleneous
+# Miscellaneous
 
 1. CTC models predict probabilities for class labels from a tokenizer vocabulary, making them classifiers inherently.
 2. CTC models can be transformed into general-purpose audio classifiers by modifying the labels and employing regular cross-entropy loss instead of CTC loss.
