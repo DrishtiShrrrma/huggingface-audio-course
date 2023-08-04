@@ -26,6 +26,7 @@
 3. In cases where the input sequence and output sequence have significantly different lengths.
 4. It can struggle with particularly long sequences due to its need to assign an output (or blank label) to every input timestep.
 5. If the number of output classes is large, CTC may not perform well. It is more suited to tasks with a smaller number of output classes.
+6. It may output words that sound correct, but are not spelled correctly, since it only considers individual characters, not complete words. This can be improved by using an external language model which acts as a spellchecker on top of the CTC output.
 
 # CTC Head
 
