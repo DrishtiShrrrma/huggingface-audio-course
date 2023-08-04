@@ -28,5 +28,4 @@
 2. CTC models can be transformed into general-purpose audio classifiers by modifying the labels and employing regular cross-entropy loss instead of CTC loss.
 3. Wav2Vec2ForSequenceClassification - for a single classification score for the entire sequence
 4. Wav2Vec2ForAudioFrameClassification - for separate classifications for each audio frame
-5. which vary in the size of the classification layer and loss function used.
-6. Any encoder-only audio transformer model can be converted into an audio classifier by adding a classification layer on top of the sequence of hidden states, as classifiers typically don't require a transformer decoder.
+5. Any encoder-only audio transformer model can be converted into an audio classifier by adding a classification layer on top of the sequence of hidden states, as classifiers typically don't require a transformer decoder.
