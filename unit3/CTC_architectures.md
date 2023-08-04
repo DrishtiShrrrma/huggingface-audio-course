@@ -57,3 +57,10 @@
 # Wav2Vec
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/ff676ed4-de97-462c-bd00-d36ae0308274)
+
+
+# What's the difference between Wav2Vec2, HuBERT, M-CTC-T, ...?
+
+1. All transformer-based CTC models have a very similar architecture: they use the transformer encoder (but not the decoder) with a CTC head on top. Architecture-wise they are more alike than different.
+2. One difference between Wav2Vec2 and M-CTC-T is that the former works on raw audio waveforms while the latter uses mel spectrograms as input. The models also have been trained for different purposes. M-CTC-T, for example, is trained for multilingual speech recognition, and therefore has a relatively large CTC head that includes Chinese characters in addition to other alphabets.
+3. Wav2Vec2 & HuBERT use the exact same architecture but are trained in very different ways. Wav2Vec2 is pre-trained like BERT’s masked language modeling, by predicting speech units for masked parts of the audio. HuBERT takes the BERT inspiration a step further and learns to predict “discrete speech units”, which are analogous to tokens in a text sentence, so that speech can be treated using established NLP techniques.
