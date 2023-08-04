@@ -10,6 +10,7 @@
 8. if the raw output is 'a-b-a-b', where '-' represents the blank symbol, it would be decoded as 'abab', preserving the actual repeated characters. Therefore, the process distinguishes between truly repeated characters and artifacts of the model's forced output at each timestep.   
 9. An ASR model is trained on a dataset consisting of (audio, text) pairs where the text is a human-made transcription of the audio file. Generally the dataset does not include any timing information that says which word or syllable occurs where in the audio file. Since we can’t rely on timing information during training, we don’t have any idea how the input and output sequences should be aligned.
 10. Use: Solving sequence-to-sequence problems where the alignment between the input and output sequences is unknown, ASR, etc!
+11. vocab is usually <=50, either only uppercase or lower case is used + numbers are spelled out (20 --> twenty)
 
 # Advantages of CTC:
 
