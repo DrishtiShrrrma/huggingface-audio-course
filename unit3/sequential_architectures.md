@@ -4,11 +4,22 @@
 
 # Sequence-to-Sequence Architectures
 
-1. Encoder-decoder model (seq2seq archi)
-2. model maps a sequence of one kind of data to a sequence of another kind of data.
-3. These models don't have a one-to-one correspondence between input and output sequences, allowing for different lengths of input and output. They're useful for tasks such as text summarization, translation between different languages, and audio tasks like speech recognition.
-4. the architecture of the decoder is similar to the encoder, both making use of layers with self-attention as a crucial feature. However, the decoder's task differs from the encoder's. The decoder generates the output sequence based on the understanding developed by the encoder from the input sequence.
-5. It's common for these seq2seq models to use spectrograms as input. However, a seq2seq model can also be designed to work directly on audio waveforms.
+1. **The seq2seq approach is more powerful than an encoder-only model for TTS.**
+2. Encoder-decoder model (seq2seq archi)
+3. model maps a sequence of one kind of data to a sequence of another kind of data.
+4. These models don't have a one-to-one correspondence between input and output sequences, allowing for different lengths of input and output. They're useful for tasks such as text summarization, translation between different languages, and audio tasks like speech recognition.
+5. the architecture of the decoder is similar to the encoder, both making use of layers with self-attention as a crucial feature. However, the decoder's task differs from the encoder's. The decoder generates the output sequence based on the understanding developed by the encoder from the input sequence.
+6. It's common for seq2seq models to use spectrograms as input. However, a seq2seq model can also be designed to work directly on audio waveforms.
+
+# Advantages of Seq2Seq
+
+1. By separating the encoding of the input sequence from the decoding of the output sequence, the alignment of audio and text is less of a problem.
+2. By separating the encoding of the input sequence (text) from the decoding of the output sequence (audio), seq2seq models mitigate alignment issues in TTS - but the decoder's autoregressive nature leads to a slower prediction process, as it generates audio one step at a time, especially for longer sequences.
+
+# Disadvantages of Seq2Seq
+
+1. Longer input sequences can cause slower decoding in seq2seq models, affecting real-time performance for TTS applications.
+2. Autoregressive models like seq2seq may encounter problems like repetitions or word skipping during decoding - Techniques like beam search can improve prediction quality in seq2seq models, but they can also further slow down the decoding process.
 
 # Encoder-only Models
 
