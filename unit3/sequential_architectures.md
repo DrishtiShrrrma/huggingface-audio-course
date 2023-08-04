@@ -1,3 +1,7 @@
+# Spectrogram
+
+1. spectrogram is made by taking the frequency spectrum of successive time slices of an audio waveform and stacking them together
+
 # Sequence-to-Sequence Architectures
 
 1. Encoder-decoder model (seq2seq archi)
@@ -30,3 +34,18 @@
 11. The metric for speech recognition is WER or word error rate, which measures how many substitutions, insertions, and deletions are necessary to turn the predicted text into the target text — the fewer, the better the score.
 12. 
 
+# Text-to-Speech
+
+1. encoder takes in a sequence of text tokens and extracts a sequence of hidden-states that represent the input text.
+2. The transformer decoder applies cross-attention to the encoder output and predicts a spectrogram.
+3. For the TTS model, we start by the decoding with a spectrogram of length one that is all zeros that acts as the “start token”.
+4. Given this initial spectrogram and the cross-attentions over the encoder’s hidden-state representations, the decoder then predicts the next timeslice for this spectrogram, steadily growing the spectrogram one timestep at a time.
+5. how does the decoder know when to stop? In the SpeechT5 model this is handled by making the decoder predict a second sequence. This contains the probability that the current timestep is the last one.  While generating audio at inference time, if this probability is over a certain threshold (say 0.5), the decoder is indicating that the spectrogram is finished and the generation loop should end.
+6. After decoding, SpeechT5 utilizes a post-net consisting of convolution layers to refine the spectrogram.
+7. During training, the TTS model uses spectrograms as targets and employs L1 or MSE loss.
+8. To convert the output spectrogram into an audio waveform, an external model called the vocoder is used, which is trained separately from the seq2seq architecture.
+9. TTS is challenging due to the one-to-many mapping between input text and possible speech sounds, making it hard to evaluate with traditional loss functions - Human listeners' evaluations using MOS or mean opinion score are often used to evaluate TTS models.
+
+
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/6c48f846-c087-4ed0-a57a-28c2af0fa43c)
