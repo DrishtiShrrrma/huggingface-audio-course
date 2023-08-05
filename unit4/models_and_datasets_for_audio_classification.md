@@ -12,7 +12,7 @@
 ### TO-DO
 
 1. Fine-tune wav2vec2 - keyword spotting task
-2. fine-tune ASR on Speech Commands dataset
+2. fine-tune AST on Speech Commands dataset
 
 # Language Identification (LID)
 
@@ -24,6 +24,12 @@
 
 1. fine-tune Whisper on FLEURS dataset (currently the most performant model is "sanchit-gandhi/whisper-medium-fleurs-lang-id")
 
+# Zero-Shot Audio Classification
+
+1. CLAP is a transformer-based model that takes both audio and text as inputs, and computes the similarity between the two.
+2. We can use this similarity prediction for zero-shot audio classification by passing one audio input to the model and multiple candidate labels. The model will return a similarity score for each of the candidate labels, and we can pick the one that has the highest score as our prediction.
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/3e0ae895-0ddf-410f-a311-f4e3811bf1f4)
 
 
 
