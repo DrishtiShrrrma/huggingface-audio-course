@@ -19,4 +19,6 @@
 # ASR : CTC OR Sequence-to-Sequence Models
 
 1. CTC: encoder-only models with a linear classification (CTC) head on top
-2. Seq2Seq: encoder-decoder models, with a cross-attention mechanism between the encoder and decoder
+- pre-trained checkpoint could be fine-tuned with a CTC head on as little as 10 minutes of labelled speech data to achieve strong performance on a downstream speech recognition task.
+- Shortcomings: Appending a simple linear layer to an encoder gives a small, fast overall model, but can be prone to phonetic spelling errors. 
+3. Seq2Seq: encoder-decoder models, with a cross-attention mechanism between the encoder and decoder
