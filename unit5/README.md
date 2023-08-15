@@ -36,3 +36,21 @@
 8. An intelligent model would recognize and correct invalid words in the vocabulary (e.g., CHRISTMAS instead of CHRISTMAUS).
 9. The model's prediction lacks two big features - casing and punctuation.
 10. The absence of casing and punctuation limits the usefulness of the model's transcriptions in real-world applications.
+
+# II) Seq2Seq
+
+1. encoder and decoder linked via a cross-attention mechanism.
+2. encoder --> computes hidden-state representations of the audio inputs + decoder --> language model.
+3. The decoder processes the entire sequence of hidden-state representations from the encoder and generates the corresponding text transcriptions.
+4. With global context of the audio input, the decoder is able to use language modelling context as it makes its predictions, correcting for spelling mistakes on-the-fly and thus circumventing the issue of phonetic predictions.
+5. Unlike its CTC predecessors, which were pre-trained entirely on un-labelled audio data, Whisper is pre-trained on a vast quantity of labelled audio-transcription data, 680,000 hours to be precise.
+6. 
+
+
+
+# Downsides to Seq2Seq
+
+
+1. inherently slower at decoding, since the decoding process happens one step at a time, rather than all at once.
+2. more data hungry --> requires significantly more training data to reach convergence ---> **labelled** speech data ---> scarce
+3. 
