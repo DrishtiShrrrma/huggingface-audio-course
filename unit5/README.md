@@ -26,13 +26,13 @@
 
 # I) CTC
 
-i. A CTC model is essentially an 'acoustic-only' model.
-ii. consists of an encoder forming hidden-state representations from audio inputs.
-iii) A linear layer maps the hidden-states to characters.
-iv) The system bases its predictions almost entirely on the acoustic input (phonetic sounds of the audio).
-v) There is a tendency to transcribe the audio in a phonetic way (e.g., CHRISTMAUS).
-vi) The model gives less importance to the language modeling context of previous and successive letters.
-vii) The model is prone to phonetic spelling errors.
-viii) An intelligent model would recognize and correct invalid words in the vocabulary (e.g., CHRISTMAS instead of CHRISTMAUS).
-ix) The model's prediction lacks two big features - casing and punctuation.
-x) The absence of casing and punctuation limits the usefulness of the model's transcriptions in real-world applications.
+1. A CTC model is essentially an 'acoustic-only' model.
+2. consists of an encoder forming hidden-state representations from audio inputs.
+3. A linear layer maps the hidden-states to characters.
+4. The system bases its predictions almost entirely on the acoustic input (phonetic sounds of the audio).
+5. There is a tendency to transcribe the audio in a phonetic way (e.g., CHRISTMAUS).
+6. The model gives less importance to the language modeling context of previous and successive letters.
+7. The model is prone to phonetic spelling errors.
+8. An intelligent model would recognize and correct invalid words in the vocabulary (e.g., CHRISTMAS instead of CHRISTMAUS).
+9. The model's prediction lacks two big features - casing and punctuation.
+10. The absence of casing and punctuation limits the usefulness of the model's transcriptions in real-world applications.
