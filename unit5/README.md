@@ -26,8 +26,8 @@
 
 # I) CTC
 
-i) A CTC model is essentially an 'acoustic-only' model.
-ii) consists of an encoder forming hidden-state representations from audio inputs.
+i. A CTC model is essentially an 'acoustic-only' model.
+ii. consists of an encoder forming hidden-state representations from audio inputs.
 iii) A linear layer maps the hidden-states to characters.
 iv) The system bases its predictions almost entirely on the acoustic input (phonetic sounds of the audio).
 v) There is a tendency to transcribe the audio in a phonetic way (e.g., CHRISTMAUS).
