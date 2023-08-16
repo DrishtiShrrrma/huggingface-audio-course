@@ -76,9 +76,15 @@
 
 2. **Domain**
 
-- Source of the data (e.g., audiobooks, podcasts, YouTube, financial meetings).
-- Matching the domain to the anticipated conditions at inference time.
-- Consideration of audio quality and style (e.g., background noise, formal vs. informal speech).
+- Source of Data: The domain refers to where the data was sourced from, such as audiobooks, podcasts, YouTube, or financial meetings.
+
+- Distribution of Data: Each domain has a unique distribution of data, reflecting different characteristics and qualities.
+
+- Audio Quality: Consideration of audio quality and style (e.g., background noise, formal vs. informal speech). For example:
+
+    - Audiobooks: Typically recorded in high-quality studio conditions with no background noise.
+    - YouTube: Likely to contain more background noise and a more informal style of speech.
+- Matching Domain to Inference Conditions: It's essential to select a domain that aligns with the conditions anticipated at inference time. Training on a domain that doesn't match the intended use can lead to poor performance. For example, a model trained on audiobooks may not perform well in noisy environments.
 
 3. **Speaking Style**
 
