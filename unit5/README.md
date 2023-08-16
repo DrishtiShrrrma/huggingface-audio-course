@@ -72,7 +72,7 @@
 1. **Number of Hours**
 
 - Size of the dataset.
-- Importance of diversity in speakers, domains, and speaking styles.
+- we want a **diverse** dataset with lots of different speakers, domains and speaking styles.
 
 2. **Domain**
 
