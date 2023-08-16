@@ -65,3 +65,28 @@
 
 1. handles long-form audio samples, its robustness to input noise and ability to predict cased and punctuated transcriptions.
 2. Whisper is pre-trained on a vast quantity of labelled audio-transcription data, 680,000 hours to be precise - better results
+3. 
+
+# Features that are Essential to Consider when Choosing a Speech Recognition Dataset
+
+1. Number of Hours
+
+- Size of the dataset.
+- Importance of diversity in speakers, domains, and speaking styles.
+
+2. Domain
+
+- Source of the data (e.g., audiobooks, podcasts, YouTube, financial meetings).
+- Matching the domain to the anticipated conditions at inference time.
+- Consideration of audio quality and style (e.g., background noise, formal vs. informal speech).
+
+3. Speaking Style
+
+- Narrated (read from a script) vs. Spontaneous (un-scripted, conversational speech).
+- Differences in articulation, errors, colloquialisms, repetitions, hesitations, and false-starts.
+
+4. Transcription Style
+
+- Presence or absence of punctuation and casing.
+- Requirements for fully formatted text vs. unformatted structure.
+- Potential need for pre-processing to remove punctuation or casing if not required.
