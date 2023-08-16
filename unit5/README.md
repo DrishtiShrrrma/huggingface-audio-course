@@ -16,7 +16,7 @@
 14. Challenges with speech that is spoken too quickly or without clear enunciation.
 
 
-# ASR : CTC OR Sequence-to-Sequence Models
+# ASR: CTC OR Sequence-to-Sequence Models
 
 1. CTC: encoder-only models with a linear classification (CTC) head on top
 - pre-trained checkpoint could be fine-tuned with a CTC head on as little as 10 minutes of labelled speech data to achieve strong performance on a downstream speech recognition task.
