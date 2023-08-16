@@ -98,3 +98,7 @@
 - punc + casing - if the goal is to generate fully formatted text for purposes like publication or meeting transcription
 - Requirements for fully formatted text vs. unformatted structure.
 - Depending on the requirements, one can either choose a dataset without punctuation or casing or select one that includes these features and then remove them through pre-processing.
+
+
+# Evaluation Metrics for ASR
+
