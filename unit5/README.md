@@ -54,3 +54,14 @@
 1. inherently slower at decoding, since the decoding process happens one step at a time, rather than all at once.
 2. more data hungry --> requires significantly more training data to reach convergence ---> **labelled** speech data ---> scarce
 3. 
+
+
+# Note
+
+1. Multi-lingual checkpoints are heavier
+2. 
+
+# Advantages of Whisper Model
+
+1. handles long-form audio samples, its robustness to input noise and ability to predict cased and punctuated transcriptions.
+2. Whisper is pre-trained on a vast quantity of labelled audio-transcription data, 680,000 hours to be precise - better results
