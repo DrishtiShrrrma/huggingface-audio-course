@@ -94,5 +94,7 @@
 4. **Transcription Style**
 
 - Presence or absence of punctuation and casing.
+- no need for punc or casing - if only the spoken words are needed without specific formatting
+- punc + casing - if the goal is to generate fully formatted text for purposes like publication or meeting transcription
 - Requirements for fully formatted text vs. unformatted structure.
-- Potential need for pre-processing to remove punctuation or casing if not required.
+- Depending on the requirements, one can either choose a dataset without punctuation or casing or select one that includes these features and then remove them through pre-processing.
