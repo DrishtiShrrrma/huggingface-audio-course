@@ -143,15 +143,6 @@
 4. Less Sensitive to Reference Transcription
 
 
-# Which Metrics Should I Use?
-
-1. WER is usually preferred over CER --> context-aware
-2. WER is less forgiving than CER but is more conducive to developing intelligible speech systems that understand language nuances.
-3. for languages like Mandarin and Japanese --> CER is preferred
-4. WER is computed over an entire test set consisting of several thousand sentences, not just one.
-5. When evaluating over multiple sentences, the substitutions (S), insertions (I), deletions (D), and total words (N) are aggregated across all sentences before computing the WER.
-
-
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/7546a752-be22-46df-948c-87f54ef75219)
 
 
@@ -159,3 +150,11 @@
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/892e4a3a-438b-49c3-a704-980fa401bf2b)
 
 Note: CER + WER both metrics in conjunction can provide a more comprehensive evaluation of a speech recognition system.
+
+# Which Metrics Should I Use?
+
+1. WER is usually preferred over CER --> context-aware
+2. WER is less forgiving than CER but is more conducive to developing intelligible speech systems that understand language nuances.
+3. for languages like Mandarin and Japanese --> CER is preferred
+4. WER is computed over an entire test set consisting of several thousand sentences, not just one.
+5. When evaluating over multiple sentences, the substitutions (S), insertions (I), deletions (D), and total words (N) are aggregated across all sentences before computing the WER.
