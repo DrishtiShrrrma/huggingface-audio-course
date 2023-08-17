@@ -106,3 +106,19 @@
 
 1. calculates substitutions, insertions and deletions on the **word level** - errors are annotated on a word-by-word basis
 2. can be higher in noisy env
+
+3. 
+
+#### Limitations of WER
+
+1. treats all errors (substitutions, insertions, deletions) equally, regardless of their impact on the meaning of the transcribed text (An error in a critical word may have more significant consequences than an error in a less important word)
+2. doesn't consider the semantic importance of words. A mistake in a key term might change the entire meaning of a sentence
+3. doesn't take into account the context in which words are used. Errors that might be considered minor in casual conversation could be more serious in a formal or technical context.
+4. no consideration of grammar
+5. calculation of WER depends on the reference transcription, and different references might lead to different WER values.
+6. WER might not be equally suitable for all languages, especially those with complex morphology or those that rely heavily on context and word order.
+7. WER may not adequately capture errors related to accents and dialects, leading to biased evaluations if the system is tested on speech that differs from the training data
+
+
+
+
