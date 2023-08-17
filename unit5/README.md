@@ -102,3 +102,7 @@
 
 # Evaluation Metrics for ASR
 
+### 1. Word Error Rate
+
+1. calculates substitutions, insertions and deletions on the **word level** - errors are annotated on a word-by-word basis
+2. can be higher in noisy env
