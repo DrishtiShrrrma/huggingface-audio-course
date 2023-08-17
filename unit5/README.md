@@ -142,12 +142,12 @@
 3. more suitable for languages where word segmentation is challenging or ambiguous.
 4. Less Sensitive to Reference Transcription
 
-![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/892e4a3a-438b-49c3-a704-980fa401bf2b)
+
 
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/7546a752-be22-46df-948c-87f54ef75219)
 
 
 
-
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/892e4a3a-438b-49c3-a704-980fa401bf2b)
 
