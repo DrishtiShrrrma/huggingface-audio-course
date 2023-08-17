@@ -107,7 +107,8 @@
 1. calculates substitutions, insertions and deletions on the **word level** - errors are annotated on a word-by-word basis
 2. can be higher in noisy env
 
-3. 
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/c6f4d173-db22-4da5-bb6b-9e99989a45b2)
+
 
 #### Limitations of WER
 
@@ -118,6 +119,10 @@
 5. calculation of WER depends on the reference transcription, and different references might lead to different WER values.
 6. WER might not be equally suitable for all languages, especially those with complex morphology or those that rely heavily on context and word order.
 7. WER may not adequately capture errors related to accents and dialects, leading to biased evaluations if the system is tested on speech that differs from the training data
+8. In cases of very short utterances, a single error can lead to a very high WER, making it a less reliable metric for evaluating performance on short segments.
+9. can be affected by the rate of speech, and models might perform differently on slow versus fast speech, even if the content is the same.
+10. doesn't give detailed insights into specific types of mistakes, such as misrecognizing certain phonemes or consistently struggling with certain grammatical structures.
+
 
 
 
