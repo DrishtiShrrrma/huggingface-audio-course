@@ -127,6 +127,27 @@
 10. doesn't give detailed insights into specific types of mistakes, such as misrecognizing certain phonemes or consistently struggling with certain grammatical structures.
 
 
+### 2. Word Accuracy
+
+1. also measured on the word-level, it’s just the WER reformulated as an accuracy metric rather than an error metric.
+2. very infrequently quoted in the speech literature
+3. 
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/49e95a9a-68e0-4201-b11c-50a3541723d6)
+
+### 3. Character Error Rate
+
+1. assesses on character-level - words are divided into their individual characters, and errors are annotated on a character-by-character basis
+2. provides a more detailed analysis at the character level, making it sensitive to small errors that might be overlooked by WER.
+3. more suitable for languages where word segmentation is challenging or ambiguous.
+4. Less Sensitive to Reference Transcription
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/892e4a3a-438b-49c3-a704-980fa401bf2b)
+
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/7546a752-be22-46df-948c-87f54ef75219)
+
+
 
 
 
