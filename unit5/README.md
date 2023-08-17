@@ -109,6 +109,9 @@
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/c6f4d173-db22-4da5-bb6b-9e99989a45b2)
 
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/4833c042-2134-4b9b-a964-94bc95a2d033)
+
+
 
 #### Limitations of WER
 
