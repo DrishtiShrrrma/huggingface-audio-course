@@ -167,3 +167,8 @@ Note: CER + WER both metrics in conjunction can provide a more comprehensive eva
 4. While normalisation can improve WER, it may come at the cost of readability and applicability in real-world scenarios where formatted text is desired.
 5. There is an option to normalise the dataset by removing casing and punctuation.
 6. train on orthographic transcriptions - normalize prediction and targets before computing WER - train on fully formatted text and benefit from the improved WER that comes with normalization.
+7. whisper ---> BasicTextNormalize
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/c1d90a37-8e71-4967-8a8c-97162979f130)
+
+
