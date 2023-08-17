@@ -165,7 +165,5 @@ Note: CER + WER both metrics in conjunction can provide a more comprehensive eva
 2. if ASR model is trained on data (casing + punc) ---> it will learn to predict these elements in its transcriptions.  ---> results in fully formatted text (orthographic style) ---> suitable for meeting transcription or dictation
 3. Wav2Vec2 does not predict punctuation or casing, while Whisper does, making the Whisper transcription easier to read - with wav2vec2, LM is required
 4. While normalisation can improve WER, it may come at the cost of readability and applicability in real-world scenarios where formatted text is desired.
-
-
 5. There is an option to normalise the dataset by removing casing and punctuation.
-
+6. train on orthographic transcriptions - normalize prediction and targets before computing WER - train on fully formatted text and benefit from the improved WER that comes with normalization.
