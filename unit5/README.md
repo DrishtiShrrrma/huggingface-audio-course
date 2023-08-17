@@ -171,4 +171,13 @@ Note: CER + WER both metrics in conjunction can provide a more comprehensive eva
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/c1d90a37-8e71-4967-8a8c-97162979f130)
 
+# Faster Inference
+
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/71816f4f-c976-47c0-9a08-435325ee6303)
+
+# WER, Normalized WER and Orthographic WER
+
+![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/51dbd247-ebd5-4531-b979-f97326ba2ae4)
+
 
