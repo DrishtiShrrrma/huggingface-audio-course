@@ -180,4 +180,14 @@ Note: CER + WER both metrics in conjunction can provide a more comprehensive eva
 
 ![image](https://github.com/DrishtiShrrrma/huggingface-audio-course/assets/129742046/51dbd247-ebd5-4531-b979-f97326ba2ae4)
 
+# WER> 1
 
+1. number of errors (substitutions, deletions, insertions) exceeds the total number of words in the reference. This suggests extreme inaccuracy in the transcription.
+2. theoretically possible but indicates a severe problem with the ASR system or the evaluation process.
+3. could indicate a significant mismatch between the reference and predicted transcriptions
+4. should be seen as a warning sign that requires careful investigation to understand the underlying issues, whether they are related to the model, the data, or the evaluation process itself.
+
+# Ortho WER> Normalized WER?
+
+1. usually ortho wer> normalized wer
+2. As Ortho WER considers punctuation, capitalization, and spelling, there are more opportunities for errors, leading to a potentially higher WER -  Normalized WER simplifies the task by removing these elements
