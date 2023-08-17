@@ -158,3 +158,7 @@ Note: CER + WER both metrics in conjunction can provide a more comprehensive eva
 3. for languages like Mandarin and Japanese --> CER is preferred
 4. WER is computed over an entire test set consisting of several thousand sentences, not just one.
 5. When evaluating over multiple sentences, the substitutions (S), insertions (I), deletions (D), and total words (N) are aggregated across all sentences before computing the WER.
+
+# Normalization
+
+
